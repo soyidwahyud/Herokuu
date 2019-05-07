@@ -8,7 +8,10 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "deploy:gh": "ng build --prod --base-href='https://soyidwahyud.github.io/Test/' && ngh",
+    "postinstall": "ng build --aot -prod",
+    "staart": "node Server.js"
   },
   "private": true,
   "dependencies": {
@@ -23,8 +26,10 @@
     "@angular/router": "^4.0.0",
     "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
+    "express": "^4.16.4",
     "rxjs": "^5.4.1",
-    "zone.js": "^0.8.14"
+    "zone.js": "^0.8.14",
+    "angular-cli": "1.0.0-beta.28.3"
   },
   "devDependencies": {
     "@angular/cli": "1.2.4",
