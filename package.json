@@ -10,7 +10,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "deploy:gh": "ng build --prod --base-href='https://soyidwahyud.github.io/Test/' && ngh",
-    "postinstall": "ng build --aot -prod"
+    "postinstall": " ng build --output-path app-herokuu08  --aot --prod"
   },
   "private": true,
   "dependencies": {
